@@ -1,0 +1,64 @@
+# project dirs
+/datasets
+/models
+/output
+/maskrcnn_benchmark/*
+.ptconfig
+.ptignore
+pretrained_model/
+/.vscode/
+/data/*
+/model/*
+/configs/*
+!/configs/demo.yml
+!/configs/oneframe.yml
+!/configs/final.yml
+/runs/*
+/tools/*
+/results/*
+/dataloader/object_bbox_and_relationship_filtersmall.pkl
+
+!/datasets/ag_to_oi_word_map_synset.npy
+!/datasets/oi_to_ag_word_map_synset.npy
+!/datasets/VG-SGG-dicts-vgoi6-clipped.json
+
+
+# ignore all __pycache__
+__pycache__/
+
+*.pyc
+*.o
+*.tar
+
+# compilation and distribution
+__pycache__
+_ext
+*.pyc
+*.so
+maskrcnn_benchmark.egg-info/
+build/
+dist/
+
+# pytorch/python/numpy formats
+*.pth
+*.pkl
+*.npy
+
+# ipython/jupyter notebooks
+*.ipynb
+**/.ipynb_checkpoints/
+
+# Editor temporaries
+*.swn
+*.swo
+*.swp
+*~
+
+# Pycharm editor settings
+.idea
+
+# vscode editor settings
+.vscode
+
+# MacOS
+.DS_Store

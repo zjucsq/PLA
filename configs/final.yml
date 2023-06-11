@@ -1,0 +1,34 @@
+gpu_id: 0
+multi_gpus: False
+num_workers: 4
+mode: 'sgdet'
+transformer_mode: 'wk'
+
+optimizer: 'adamw'
+lr: 0.00001
+nepoch: 5
+enc_layer: 1
+dec_layer: 3
+bce_loss: True
+is_wks: True
+feat_dim: 2048
+pseudo_way: 0
+union_box_feature: True
+loss: 'KL'
+
+teacher_mode_cfg: 'configs/oneframe.yml'
+temperature: 1
+alpha: 0.5
+transition_module: True
+t_lr: 0.001
+IOUmatch: True
+label_fusion_strategy: 1
+
+save_path: 'models/final/'
+model_path: 'models/final/model_4.tar'
+data_path: '/home/csq/datasets/ActionGenome/dataset/ag/'
+datasize: 'large'
+ckpt: None
+ws_object_bbox_path: 'annotations/gt_annotation_thres02_keep1_modelfree_05.pkl'
+
+tensorboard_name: 'runs/final'
