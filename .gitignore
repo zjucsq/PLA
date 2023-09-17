@@ -1,5 +1,8 @@
 # project dirs
-/datasets
+/datasets/*
+!/datasets/ag_to_oi_word_map_synset.npy
+!/datasets/oi_to_ag_word_map_synset.npy
+!/datasets/VG-SGG-dicts-vgoi6-clipped.json
 /models
 /output
 /maskrcnn_benchmark/*
@@ -17,11 +20,6 @@ pretrained_model/
 /tools/*
 /results/*
 /dataloader/object_bbox_and_relationship_filtersmall.pkl
-
-!/datasets/ag_to_oi_word_map_synset.npy
-!/datasets/oi_to_ag_word_map_synset.npy
-!/datasets/VG-SGG-dicts-vgoi6-clipped.json
-
 
 # ignore all __pycache__
 __pycache__/
